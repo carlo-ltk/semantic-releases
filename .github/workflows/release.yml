@@ -1,0 +1,28 @@
+name: release 📦
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      #- name: Install semantic-release extra plugins
+      #  run: npm install --save-dev @semantic-release/changelog @semantic-release/git
+      #  env:
+      #    NPM_CONFIG_USERCONFIG: .npmrc.ci
+      #    NODE_AUTH_TOKEN: ${{ secrets.PRIVATE_REPO_PAT }}
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release
