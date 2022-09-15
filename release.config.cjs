@@ -10,12 +10,12 @@ module.exports = {
           "changelogFile": "CHANGELOG.md"
         }
       ],
-      [
+      /* [
         "@semantic-release/git",
         {
           "assets": ["CHANGELOG.md"]
         }
-      ]
+      ],*/
       [
         "semantic-release-github-pullrequest", {
           "assets": ["CHANGELOG.md"],
