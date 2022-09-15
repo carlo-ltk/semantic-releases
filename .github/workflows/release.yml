@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 14.x
       - name: Install semantic-release extra plugins
-        run: npm install --save-dev @semantic-release-github-pullrequest @semantic-release/changelog
+        run: npm install --save-dev semantic-release-github-pullrequest semantic-release/changelog
         env:
           NODE_AUTH_TOKEN: ${{ secrets.PRIVATE_REPO_PAT }}
       - name: Release
