@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/carlo-ltk/semantic-releases/compare/v1.4.0...v1.5.0) (2022-09-15)
+
+
+### Features
+
+* **core:** add package-lock.json to the project ([89535c7](https://github.com/carlo-ltk/semantic-releases/commit/89535c75203413190e9a519ae9a225ccc0e5a52f))
+
 # [1.3.0](https://github.com/carlo-ltk/semantic-releases/compare/v1.2.0...v1.3.0) (2022-09-15)
 
 
