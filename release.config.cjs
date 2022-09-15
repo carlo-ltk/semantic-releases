@@ -10,6 +10,12 @@ module.exports = {
           "changelogFile": "CHANGELOG.md"
         }
       ],
+      [
+        '@semantic-release/npm',
+        {
+          npmPublish: false,
+        },
+      ],
       /* [
         "@semantic-release/git",
         {
@@ -18,7 +24,7 @@ module.exports = {
       ],*/
       [
         "semantic-release-github-pullrequest", {
-          "assets": ["CHANGELOG.md"],
+          "assets": ["CHANGELOG.md", "package.json", "package-lock.json"],
           "baseRef": "main"
         }
       ],
